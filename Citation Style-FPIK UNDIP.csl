@@ -3,15 +3,13 @@
   <info>
     <title>Chicago Custom Skripsi (Italic et al.)</title>
     <id>http://www.zotero.org/styles/chicago-custom-skripsi</id>
-    <link href="http://www.zotero.org/styles/chicago-author-date" rel="independent-parent"/>
-    <category citation-format="author-date"/>
     <updated>2026-04-16T00:00:00+00:00</updated>
   </info>
 
   <!-- AUTHOR -->
   <macro name="author">
     <names variable="author" delimiter=", " and="text" et-al-min="3" et-al-use-first="1">
-      <name form="long" name-as-sort-order="first"/>
+      <name name-as-sort-order="first"/>
       <et-al font-style="italic"/>
     </names>
   </macro>
@@ -23,7 +21,7 @@
     </date>
   </macro>
 
-  <!-- TITLE (BOOK ITALIC, ARTICLE QUOTES) -->
+  <!-- TITLE -->
   <macro name="title">
     <choose>
       <if type="book">
@@ -56,7 +54,7 @@
     </group>
   </macro>
 
-  <!-- DATE MAJALAH -->
+  <!-- MAGAZINE DATE -->
   <macro name="date-magazine">
     <date variable="issued">
       <date-part name="month"/>
@@ -67,9 +65,9 @@
   <!-- BIBLIOGRAPHY -->
   <bibliography>
     <layout suffix=".">
-      
-      <!-- BUKU -->
       <choose>
+
+        <!-- BOOK -->
         <if type="book">
           <group delimiter=". ">
             <text macro="author"/>
@@ -80,7 +78,7 @@
           </group>
         </if>
 
-        <!-- JURNAL -->
+        <!-- JOURNAL -->
         <else-if type="article-journal">
           <group delimiter=". ">
             <text macro="author"/>
@@ -94,7 +92,7 @@
           </group>
         </else-if>
 
-        <!-- MAJALAH -->
+        <!-- MAGAZINE -->
         <else-if type="article-magazine">
           <group delimiter=". ">
             <text macro="author"/>
@@ -118,7 +116,7 @@
         </else>
 
       </choose>
-
     </layout>
   </bibliography>
+
 </style>
