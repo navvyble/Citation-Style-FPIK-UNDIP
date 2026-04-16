@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="id-ID">
   <info>
-    <title>FPIK UNDIP (By: Soy Pablo)</title>
-    <id>http://www.zotero.org/styles/custom-chicago-By-Soy-Pablo</id>
-    <link href="http://www.zotero.org/styles/custom-chicago-By-Soy-Pablo" rel="self"/>
+    <title>FPIK UNDIP By: Soy Pablo</title>
+    <id>http://www.zotero.org/styles/custom-chicago-justify-dan-no-spacing</id>
+    <link href="http://www.zotero.org/styles/custom-chicago-justify-dan-no-spacing" rel="self"/>
     <author>
       <name>Soy Pablo</name>
     </author>
@@ -11,14 +11,10 @@
     <updated>2024-05-22T00:00:00+00:00</updated>
   </info>
 
-  <locale xml:lang="en">
-    <terms>
-      <term name="et-al">et al.</term>
-    </terms>
-  </locale>
   <locale xml:lang="id">
     <terms>
       <term name="et-al">et al.</term>
+      <term name="and">dan</term>
     </terms>
   </locale>
 
@@ -46,22 +42,15 @@
   </macro>
 
   <macro name="issued">
-    <choose>
-      <if variable="issued">
-        <date variable="issued">
-          <date-part name="year"/>
-        </date>
-      </if>
-      <else>
-        <text term="no date" form="short"/>
-      </else>
-    </choose>
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
   </macro>
 
   <macro name="title">
     <choose>
-      <if type="article-journal article-magazine article-newspaper" match="any">
-        <text variable="title" quotes="true"/>
+      <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+        <text variable="title" font-style="italic"/>
       </if>
       <else>
         <text variable="title"/>
@@ -80,7 +69,7 @@
     <choose>
       <if type="article-journal">
         <group delimiter=" ">
-          <text variable="container-title"/>
+          <text variable="container-title" font-style="italic"/>
           <group delimiter=": ">
             <text variable="volume"/>
             <text variable="page"/>
@@ -89,7 +78,7 @@
       </if>
       <else-if type="article-magazine">
         <group delimiter=", ">
-          <text variable="container-title"/>
+          <text variable="container-title" font-style="italic"/>
           <date variable="issued">
             <date-part name="month" form="long" suffix=" "/>
             <date-part name="day" suffix=", "/>
@@ -124,7 +113,7 @@
     </layout>
   </citation>
 
-  <bibliography hanging-indent="true" entry-spacing="1">
+  <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1" text-align="justify">
     <sort>
       <key macro="author"/>
       <key macro="issued"/>
