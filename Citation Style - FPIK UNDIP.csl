@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="id-ID">
   <info>
-    <title>FPIK UNDIP By: Soy Pablo</title>
-    <id>http://www.zotero.org/styles/custom-chicago-justify-dan-no-spacing</id>
-    <link href="http://www.zotero.org/styles/custom-chicago-justify-dan-no-spacing" rel="self"/>
+    <title>FPIK UNDIP - Custom (Soy Pablo)</title>
+    <id>http://www.zotero.org/styles/fpik-undip-soy-pablo-v2</id>
+    <link href="http://www.zotero.org/styles/fpik-undip-soy-pablo-v2" rel="self"/>
     <author>
       <name>Soy Pablo</name>
     </author>
@@ -32,11 +32,11 @@
 
   <macro name="author-short">
     <names variable="author">
-      <name form="short" and="text" delimiter=", " initialize-with=". "/>
+      <name form="short" and="text" delimiter=", " initialize="false"/>
       <et-al font-style="italic"/>
       <substitute>
         <names variable="editor"/>
-        <text variable="title"/>
+        <text variable="title" form="short"/>
       </substitute>
     </names>
   </macro>
@@ -108,7 +108,6 @@
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued"/>
-        <text variable="locator"/>
       </group>
     </layout>
   </citation>
