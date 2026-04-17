@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="id-ID">
+<style xmlns="http://purl.org" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="id-ID">
   <info>
     <title>FPIK UNDIP - Custom (Soy Pablo)</title>
-    <id>FPIK UNDIP - Custom (Soy Pablo)</id>
+    <id>fpik-undip-soy-pablo-v2-fixed</id>
     <link href="https://mendeley.com" rel="self"/>
     <author>
       <name>Soy Pablo</name>
@@ -112,7 +112,7 @@
     </layout>
   </citation>
 
-  <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1" text-align="justify">
+  <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1">
     <sort>
       <key macro="author"/>
       <key macro="issued"/>
@@ -126,7 +126,7 @@
         <text macro="locators"/>
         <text macro="publisher"/>
       </group>
-      <text variable="DOI" prefix=". https://doi.org/"/>
+      <text variable="DOI" prefix=". https://doi.org"/>
     </layout>
   </bibliography>
 </style>
