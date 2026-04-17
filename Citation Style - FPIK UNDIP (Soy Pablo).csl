@@ -42,18 +42,19 @@
 
   <!-- AUTHOR SHORT -->
   <macro name="author-short">
-    <names variable="author">
-      <name form="short"
-            and="text"
-            delimiter=", "
-            initialize="false"/>
-      <et-al font-style="italic"/>
-      <substitute>
-        <names variable="editor"/>
-        <text variable="title" form="short"/>
-      </substitute>
-    </names>
-  </macro>
+  <names variable="author">
+    <name form="short"
+          name-as-sort-order="all"
+          and="text"
+          delimiter=", "
+          delimiter-precedes-last="always"/>
+    <et-al font-style="italic"/>
+    <substitute>
+      <names variable="editor"/>
+      <text variable="title" form="short"/>
+    </substitute>
+  </names>
+</macro>
 
   <!-- YEAR -->
   <macro name="issued">
