@@ -7,8 +7,8 @@
 
   <info>
     <title>FPIK UNDIP - Custom (Soy Pablo)</title>
-    <id>fpik-undip-soy-pablo-final-fix</id>
-    <link href="https://mendeley.com" rel="self"/>
+    <id>http://www.zotero.org/styles/fpik-undip-soy-pablo</id>
+    <link href="http://www.zotero.org/styles/fpik-undip-soy-pablo" rel="self"/>
     <author>
       <name>Soy Pablo</name>
     </author>
@@ -23,7 +23,7 @@
     </terms>
   </locale>
 
-  <!-- AUTHOR FULL -->
+  <!-- AUTHOR -->
   <macro name="author">
     <names variable="author">
       <name name-as-sort-order="first"
@@ -154,7 +154,7 @@
         <text macro="locators"/>
         <text macro="publisher"/>
       </group>
-      <text variable="DOI" prefix=". https://doi.org"/>
+      <text variable="DOI" prefix=". https://doi.org/"/>
     </layout>
 
   </bibliography>
